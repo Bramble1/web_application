@@ -6,16 +6,15 @@ on:
 
 jobs:
   build:
-
-    runs-on: ubuntu-latest
-
+    name: CI                  
+    runs-on: ubuntu-latest    
     steps:
-    - uses: actions/checkout@v4
-    - name: configure
-      run: echo "./configure"
-    - name: make
-      run: echo "make"
-    - name: make check
-      run: echo "make check"
-    - name: make distcheck
-      run: echo "make distcheck"
+      - uses: actions/checkout@v4
+      - name: configure
+        run: echo "./configure"
+      - name: make
+        run: echo "make"
+      - name: make check
+        run: echo "make check"
+      - name: make distcheck
+        run: echo "make distcheck"
