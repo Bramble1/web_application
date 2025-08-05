@@ -1,7 +1,7 @@
 pipeline {
   agent any
   options {
-        buildStatusOnFailure(
+        buildStatusOnFailure()
     }
   stages {
     stage('Build') {
